@@ -22,8 +22,8 @@ const Products = ()=>{
             </div>
         <div className="card-container">
         <div className="cards">
-            {productList.map(list =>    <ProductCard key={list.id} img={list.img}/>)} 
-            {productList.map(list =>    <ProductCard key={list.id} img={list.img}/>)}          
+            {productList.map(list =>    <ProductCard key={list.id} img={list.img} loading='lazy'/>)} 
+            {productList.map(list =>    <ProductCard key={list.id} img={list.img} loading='lazy'/>)}          
         </div>
         </div>
         </section>

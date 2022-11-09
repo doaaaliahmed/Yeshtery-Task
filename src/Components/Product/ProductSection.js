@@ -60,14 +60,14 @@ const ProductSection = (props) => {
         <form onSubmit={productSubmitFunc}>
       <div className="product-images">
         <div className="main-img">
-          <img src={chosenImg} alt="main-img" />
+          <img src={chosenImg} alt="main-img" loading='lazy'/>
         </div>
         <div className="imges-box">
           <div className="imges-box__container">
-            <img src={Tshirt} alt="main-img"  onClick={changeImgFuc} />
-            <img src={slide1} alt={'slide1'}  onClick={changeImgFuc} />
-            <img src={slide2} alt={'slide2'}  onClick={changeImgFuc} />
-            <img src={slide3} alt={'slide3'}  onClick={changeImgFuc} />
+            <img src={Tshirt} alt="main-img"  onClick={changeImgFuc} loading='lazy'/>
+            <img src={slide1} alt={'slide1'}  onClick={changeImgFuc} loading='lazy'/>
+            <img src={slide2} alt={'slide2'}  onClick={changeImgFuc} loading='lazy'/>
+            <img src={slide3} alt={'slide3'}  onClick={changeImgFuc} loading='lazy'/>
           </div>
         </div>
       </div>
