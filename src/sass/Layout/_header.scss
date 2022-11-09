@@ -2,7 +2,7 @@
   background-color: $secondary-color;
   @include flexBetween;
   gap: 5rem;
-  padding: 0.5rem 15rem;
+  padding: 0.5rem 6rem;
   border-bottom: 1px solid $light-gray;
 
   &_col-1 {
@@ -37,7 +37,7 @@
 .secondNav {
   @include flexBetween;
   gap: 5rem;
-  padding: 1% 15rem;
+  padding: 1% 6rem;
 
   &__col-2 {
     width: 4rem;
@@ -90,7 +90,7 @@
 
 .third-nav{
     background-color: $color-black;
-    padding: 1% 15rem;
+    padding: 1% 6rem;
 
     ul{
         width:100%;
