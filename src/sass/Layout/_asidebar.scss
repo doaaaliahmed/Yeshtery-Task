@@ -1,0 +1,54 @@
+aside{
+    position: fixed;
+    height:100vh;
+    width:40%;
+    left:0;
+    top:0;
+    background-color: $color-white;
+    padding: 2rem 1rem;
+    z-index: 20;
+
+    @media (max-width:990px) {
+        width:80%;
+        
+    }
+
+    .heading-bar{
+       @include flexBetween;
+        padding-bottom:2rem;
+        border-bottom: 1px solid lightgray;
+        margin:1rem;
+        margin-bottom:3rem;
+
+        .close-btn {
+            width: 1.7rem;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+          }
+    }
+
+    .list-item{
+        margin: 1rem ;
+        border-bottom: 1px solid $light-gray;
+        padding: 1rem 0;
+       
+        .link-item{
+            color:$color-black;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.overlay{
+    position: fixed;
+    height:100vh;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.719);
+    z-index: 10;
+}

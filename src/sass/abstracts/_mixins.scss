@@ -1,0 +1,25 @@
+@mixin flexBetween {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+
+   
+}
+
+@mixin flexcenter {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+   
+}
+
+@mixin border20{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

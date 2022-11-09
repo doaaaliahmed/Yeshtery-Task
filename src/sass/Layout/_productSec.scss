@@ -1,0 +1,200 @@
+.productSection {
+  padding: 3rem 0;
+  
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+  
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-images {
+    width: 45%;
+    padding: 1rem;
+
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+
+    .main-img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .imges-box {
+      width: 100%;
+      overflow-x: scroll;
+
+      .imges-box__container {
+        width: fit-content;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-start;
+
+        img {
+          border-radius: 5px;
+          border: 3px solid $light-gray;
+          width: 23%;
+        }
+      }
+    }
+  }
+
+  .product-details {
+    width: 45%;
+
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+    .brand-img {
+      img {
+        width: 5rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      font-weight: bold;
+      line-height: 1.3rem;
+    }
+
+    &__price {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+      margin: 1rem 0;
+
+    }
+
+    .rate-box {
+      @include flexBetween;
+      flex-direction: row;
+      width: 80%;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .stars {
+      display: flex;
+      width: 50%;
+    }
+
+    .sizeBox {
+      input[type="radio"] {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &__options {
+        margin: 1rem 0;
+        @include flexBetween;
+        font-size: 0.9rem;
+
+        .option {
+          border: 1px solid $light-gray;
+          border-radius: 50%;
+          width: 5rem;
+          height: 5rem;
+          padding: 2rem 0;
+          text-align: center;
+          position: relative;
+
+          &:hover{
+            background-color: $light-gray;
+           
+          }
+
+        }
+      }
+    }
+
+    .colorBox {
+      &__options {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        align-items: center;
+        font-size: 0.9rem;
+
+        .option {
+          border: 1px solid $light-gray;
+          border-radius: 50%;
+          width: 6rem;
+          height: 6rem;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .quantityBox {
+      &__numbers {
+        margin: 0.5rem 0;
+        background-color: $light-gray;
+        width: 50%;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include border20;
+        line-height: 2.5rem;
+
+        .dicreaseNum,
+        .increaseNum {
+          margin: 0.3rem;
+          background-color: $secondary-color;
+          text-align: center;
+          width: 25%;
+          @include border20;
+        }
+      }
+    }
+
+    .order-Buttons {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin: 2rem 0;
+
+      .order-btn {
+        background-color: $primary-color;
+        color: $color-white;
+      }
+
+      .store-btn {
+        background-color: $secondary-color;
+      }
+
+      button {
+        width: 50%;
+        line-height: 3rem;
+        border: none;
+        outline: none;
+       @include border20;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

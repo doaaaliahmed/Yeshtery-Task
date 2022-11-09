@@ -1,0 +1,36 @@
+
+.product-section{
+    margin:3rem;
+
+    @media (max-width:1200px) {
+        margin:1rem;
+    }
+
+
+    ::-webkit-scrollbar{
+        height:5px;
+        background-color: transparent;
+        width:10px;
+       
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $primary-color; 
+        border-radius: 10px;
+      }
+
+ 
+.card-container{
+    width:100%;
+    overflow-x: scroll;
+   
+    .cards{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:2rem;
+        padding:3rem 0;
+        width:200%;
+        
+    }
+}
+}

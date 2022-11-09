@@ -1,0 +1,159 @@
+.firstNav {
+  background-color: $secondary-color;
+  @include flexBetween;
+  gap: 5rem;
+  padding: 0.5rem 15rem;
+  border-bottom: 1px solid $light-gray;
+
+  &_col-1 {
+    @include flexcenter;
+    gap: 2rem;
+
+    .brand-img {
+      width: 6rem;
+    }
+
+    .list-btn {
+      width: 1.7rem;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .listCotainer {
+    @include flexcenter;
+    gap: 2rem;
+
+    .list-item {
+      padding: 5px;
+    }
+  }
+}
+
+/***********************************************************/
+
+.secondNav {
+  @include flexBetween;
+  gap: 5rem;
+  padding: 1% 15rem;
+
+  &__col-2 {
+    width: 4rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__col-1 {
+    border: 1px solid $light-gray;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 0.5rem;
+    width: 20rem;
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: flex-start;
+
+      #search {
+        border: none;
+        padding: 0;
+        width: 100%;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .listCotainer {
+    @include flexcenter;
+    gap: 2rem;
+
+    .list-item {
+      padding: 5px;
+    }
+  }
+}
+
+/***********************************************************/
+
+.third-nav{
+    background-color: $color-black;
+    padding: 1% 15rem;
+
+    ul{
+        width:100%;
+        @include flexBetween;
+
+        .link-item{
+            color:$color-white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition:all .2s ;
+            -webkit-transition:all .2s ;
+            -moz-transition:all .2s ;
+            -ms-transition:all .2s ;
+            -o-transition:all .2s ;
+
+            &:hover{
+                color: $color-pink;
+            }
+        }
+    }
+}
+
+
+/******************************************/
+
+.navbar{
+    background-color: $secondary-color;
+    @include flexBetween;
+    padding:1rem .5rem;
+  
+    .col-1{
+        @include flexcenter;
+        gap:2rem;
+
+        .brand-img{
+            width:6rem;
+        }
+
+        .list-btn{
+        width: 1.7rem;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      
+        }
+    }
+
+    .listCotainer{
+       @include flexcenter;
+        gap:1rem;
+
+        .list-item{
+            padding:5px;
+        }
+        .link-item{
+           @include flexcenter;
+            gap:.5rem;
+            color:$color-black;
+            text-decoration: none;
+        }
+
+   
+    }
+}

@@ -1,0 +1,40 @@
+body{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+p{
+    font-size:.8rem;
+}
+
+.nav-link{
+        @include flexcenter;
+        gap: 0.5rem;
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+}
+
+hr{
+    border:1px solid rgb(238, 238, 238);
+    margin:.5rem 0;
+ }
+
+ h3{
+    font-size: 2rem;
+}
+
+.heading-section{
+    margin-bottom:3rem;
+    
+    &_title{
+        color: #661466;
+        font-size: 3.5rem;
+        margin-bottom: .5rem;
+    }
+
+    &_text{
+        font-size: 2rem;
+    }
+}
